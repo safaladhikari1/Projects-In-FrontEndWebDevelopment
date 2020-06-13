@@ -121,7 +121,7 @@ function showImages(tempId)
         return response.json();
     })
 
-    .then(function (json) {
+    .then((json) => {
         loadCats(json);
     });
 }
@@ -129,16 +129,18 @@ function showImages(tempId)
 // function to add images on the <img> tags on flexbox
 function loadCats(objects)
 {
-    let square = document.querySelector("section#bottom");
-    let element = square.children;
+    let square = document.getElementById("bottom");
+
+    square.innerHTML = "";
 
     for(let i=0; i<objects.length; i++)
     {
-        element[i].setAttribute("src", objects[i].url);
+        let item = document.createElement("img");
+        item.setAttribute("src", objects[i].url);
+        square.appendChild(item);
     }
 }
 
-// function for switch statements, child friendly
 function childFriendly(childFriendlyValue)
 {
     let childFriendly = document.getElementById("child-friendly");

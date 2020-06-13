@@ -3,4 +3,4 @@
 
 Cat Breeds Info Home Page
 
-![Cat Breeds Info Home Page] (https://github.com/safaladhikari1/Projects-In-FrontEndWebDevelopment/blob/master/SafalCatAPI/catBreedInfo.png?raw=true)
+![Cat Breeds Info Home Page](/SafalCatAPI/catBreedInfo.png)
